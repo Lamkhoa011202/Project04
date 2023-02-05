@@ -169,8 +169,7 @@ public class MainActivity extends AppCompatActivity  {
     }
     public void textWelcome()
     {
-        String username = getIntent().getStringExtra("USERNAME_KEY");
-        txtWelcome.setText(username + ", hãy ra trường đúng hạn!");
+        txtWelcome.setText( "hãy ra trường đúng hạn!");
     }
     public void onRestart () {
 
