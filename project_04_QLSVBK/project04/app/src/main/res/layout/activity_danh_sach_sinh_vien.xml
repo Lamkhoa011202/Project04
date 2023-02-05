@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DanhSachSinhVien">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/title_ds_sinhvien" />
+
+            <EditText
+                android:id="@+id/edtsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:hint="Nhập tên cần tìm kiếm"
+                android:padding="15dp"
+                android:textColorHint="#000" />
+
+            <ListView
+                android:id="@+id/listSV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/edtsearch"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                tools:listitem="@layout/item_sinh_vien" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".DanhSachSinhVien">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fbDangXuat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/icondangxuat"
+                        app:backgroundTint="#949EA6"
+                        app:fabSize="mini" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fbHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/ic_home"
+                        app:backgroundTint="#949EA6"
+                        app:fabSize="mini" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fbsearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/add64"
+                        app:backgroundTint="#949EA6"
+                        app:fabSize="mini" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/ic_add"
+                        app:backgroundTint="#D11010"
+                        app:fabSize="normal" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

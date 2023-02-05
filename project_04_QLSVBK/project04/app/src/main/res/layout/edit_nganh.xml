@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutSuaNganh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#949EA6"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#949EA6"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:scrollHorizontally="true">
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:scrollHorizontally="true"
+            android:text="SỬA NGÀNH"
+            android:textColor="#D11010"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editMaNganh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Nhập mã ngành"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/editTenNganh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Nhập tên ngành"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="35dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btnCapNhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:background="#FFFFFF"
+                android:text="CẬP NHẬT"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
